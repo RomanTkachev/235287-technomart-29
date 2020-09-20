@@ -79,10 +79,13 @@ img {
 	background-color: var(--basic-darkblue);
 }
 
+
+.logop {
+	height: 100px;
+
+}
 .logo {
-	color: var(--basic-white);
 	background-color: var(--basic-red);
-	text-transform: uppercase;
 	box-shadow: inset 0px -5px 0px var(--special-cherry-red);
 }
 
