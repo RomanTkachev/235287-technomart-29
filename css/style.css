@@ -80,10 +80,6 @@ img {
 }
 
 
-.logop {
-	height: 100px;
-
-}
 .logo {
 	background-color: var(--basic-red);
 	box-shadow: inset 0px -5px 0px var(--special-cherry-red);
