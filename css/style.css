@@ -55,7 +55,7 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: var(--basic-white);
-  background-color: var(--background-gray);
+  background-color: var(--basic-white);
 }
 
 a {
@@ -67,9 +67,224 @@ img {
   height: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .list {
 	list-style: none;
+	margin: 0;
+  padding: 0;
 }
+
+/* Layouts Index */
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.main-header {
+  margin-bottom: 59px;
+}
+
+.header-top-bar-content {
+	display: flex;
+	justify-content: space-between;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.header-middle-content {
+	display: flex;
+	justify-content: space-between;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.main-navigation {
+	display: grid;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.site-navigation-white {
+	display: flex;
+	justify-content: space-around;
+}
+
+.container {
+	width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.test-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 20px;
+	margin-bottom: 59px;
+}
+
+.main-wrapper {
+	display: grid;
+	grid-column: 1 / -1;
+	grid-row: 1 / -1;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 20px;
+	
+}
+
+.slider-list  {
+	grid-column: 1 / 3;
+	grid-row: 2 / 4;
+}
+
+.categories-item.sale {
+	grid-column: 3 / 4;
+	grid-row: 2 / 3;
+
+}
+
+.categories-item.delivery {
+	grid-column: 3 / 4;
+	grid-row: 3 / 4;
+}
+
+.popular {
+	display: grid;
+	grid-template-rows: min-content 1fr;
+	gap: 20px;
+	margin-bottom: 70px;
+}
+
+.heading-background-gray {
+	display: flex;
+	justify-content: space-between;
+}
+
+.popular-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 20px;
+}
+
+.vendors {
+	display: grid;
+	grid-template-rows: min-content 1fr;
+	gap: 20px;
+	margin-bottom: 70px;
+}
+
+.vendors-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 20px;
+}
+
+.features {
+	display: grid;
+	grid-template-rows: min-content 1fr;
+	margin-bottom: 70px;
+}
+
+.features-list-content {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+.about-wrapper {
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	margin-bottom: 70px;
+}
+
+.main-footer {
+  display: grid;
+  grid-template-rows: min-content min-content;
+}
+
+.footer-top-content {
+	display: grid;
+	grid-template-rows: min-content min-content;
+	grid-template-columns: 1fr 1fr;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.site-navigation-gray {
+	display: flex;
+	justify-content: space-between;
+}
+
+.site-navigation-yellow {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-phone {
+	grid-column: 1 / 2;
+	grid-row: 3 / 4;
+}
+
+
+.footer-bottom-content {
+	display: grid;
+	grid-template-rows: min-content;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	width: 940px;
+	margin: 0 auto;
+}
+
+
+/* Layouts Catalog */
+
+.page-catalog {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  align-content: start;
+}
+
+.page-catalog h1 {
+	grid-column: 1 / -1;
+}
+
+.page-catalog .breadcrumbs {
+  grid-column: 1 / -1;
+  margin-bottom: 20px;
+
+}
+
+.page-catalog .filter {
+	grid-row: 3 / 5;
+}
+
+.catalog-list {
+	margin-bottom: 48px;
+}
+
+.pagination-list {
+	display: flex;
+	margin-bottom: 59px;
+}
+
+.catalog-bottom-text {
+	grid-column: 1 / -1;
+}
+
 
 .main-header {
 	background-color: var(--background-lightgray);
@@ -193,6 +408,12 @@ img {
 .site-navigation-white a:active {
 	color: var(--special-ultra-transparent-white);
 	background-color: var(--special-active-darkblue);
+}
+
+.page-catalog h1 {
+	margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
 }
 
 .breadcrumbs a {
@@ -385,6 +606,10 @@ img {
 	background-color: var(--background-ultra-lightgray);
 }
 
+.catalog-bottom-text .text{
+	margin-bottom: 67px;
+}
+
 .pagination-list a {
 	color: var(--basic-black);
 	background-color: var(--basic-white);
@@ -498,7 +723,6 @@ img {
 	line-height: 18px;
 }
 
-
 .link-yellow {
 	color: var(--special-gold);
 }
@@ -511,3 +735,6 @@ img {
 	color: var(--basic-red);
 	text-decoration: none;
 }
+
+
+
