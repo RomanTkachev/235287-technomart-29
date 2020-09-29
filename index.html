@@ -55,9 +55,9 @@
   			</ul>
   		</nav>
   	</header>
-  	<main class="container">
+  	<main>
   		<h1 class="visually-hidden">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-  		<section class="categories">
+  		<section class="categories container">
   			<h2 class="visually-hidden heading">Товары и услуги</h2>
     		<div class="catigories-wrapper">
           <ul class="categories-list list">
@@ -76,32 +76,30 @@
     				<li class="categories-item delivery">
     					<p class="categories-item-title">Доставка</p> <a class="categories-item-link" href="">бесплатно</a>
     				</li>
-    			</ul>
-      		<ul class="slider-list list">
-      			<li class="slider-item">
-      				<img src="img/slider-perforator.jpg" width="620" height="266" alt="Раздел каталога «Перфораторы»">
-      				<p class="slider-heading">Перфораторы</p>
-      				<p>Настоящие мужские игрушки</p>
-      				<a class="button" href="catalog.html">Открыть каталог</a>
-              <button class="slider-navigation-control" type="button">Вперед</button>
-              <button class="slider-navigation-control" type="button">Назад</button>
-      			</li>
-            
-            <!--Закомментировал, чтобы не выпадал из сетки 
-
-            <li class="slider-item">
-              <img src="img/slider-drill.jpg" width="620" height="266" alt="Раздел каталога «Дрели»">
-              <p class="slider-heading">Дрели</p>
-              <p>Соседям на радость!</p>
-              <a class="button" href="">Открыть каталог</a>
-            </li> 
-            <button class="slider-navigation-control" type="button">Вперед</button>
-            <button class="slider-navigation-control" type="button">Назад</button>
-            -->
+      		  <li class="slider">
+              <ul class="slider-list list">
+          			<li class="slider-item">
+          				<img src="img/slider-perforator.jpg" width="620" height="266" alt="Раздел каталога «Перфораторы»">
+          				<p class="slider-heading">Перфораторы</p>
+          				<p class="slider-item-text">Настоящие мужские игрушки</p>
+          				<a class="button" href="catalog.html">Открыть каталог</a>
+          			</li>
+                <!--Второй слайд пока убрал <li class="slider-item">
+                  <img src="img/slider-drill.jpg" width="620" height="266" alt="Раздел каталога «Дрели»">
+                  <p class="slider-heading">Дрели</p>
+                  <p>Соседям на радость!</p>
+                  <a class="button" href="">Открыть каталог</a>
+                </li>
+                <li class="slider-controls"> 
+                  <button class="slider-navigation-control" type="button">Вперед</button>
+                  <button class="slider-navigation-control" type="button">Назад</button>
+                </li>-->
+              </ul>
+            </li>
       		</ul>       
         </div>
   		</section>
-  		<section class="popular">
+  		<section class="popular container">
         <div class="heading-background-gray">
     			<h2 class="heading heading-blue popular-heading">Популярные товары:</h2>
     			<a class="button" href="">Все популярные товары</a>
@@ -148,7 +146,7 @@
           </li>
   			</ul>
   		</section>
-  		<section class="vendors">
+  		<section class="vendors container">
         <div class="heading-background-gray">
     			<h2 class="heading heading-blue">Популярные производители:</h2>
     			<a class="button" href="">Все производители</a>
@@ -197,52 +195,54 @@
   			</ul>
   		</section>
   		<section class="features">
-        <div class="features-title">
-    			<h2 class="heading">Сервисы</h2>
-    			<p class="text">Хороший интернет-магазин отличается от плохого не только ценами! <br>
-    			Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        </div>
-        <div class="features-list-content">
-    			<ul class="features-button-list list">
-    				<li>
-    					<button class="features-button" type="button">Доставка</button>
-            </li>
-            <li>
-              <button class="features-button" type="button">Гарантия</button>
-            </li>
-            <li>
-              <button class="features-button" type="button">Кредит</button>
-            </li>	
-    			</ul>
-          <ul class="features-list list">
-            <li class='features-item'>
-              <h3 class="heading-blue">Доставка</h3>
-              <p class="text">
-                Мы с удовольствием доставим ваш товар прямо<br>
-                к вашему подъезду совершенно бесплатно!<br>
-                Ведь мы неплохо заработаем, <br> 
-                поднимая его на ваш этаж!
-              </p>
-            </li>
-            <!--<li class='features-item'>
-              <h3 class="heading-blue">Гарантия</h3>
-              <p class="text">
-                Если купленный у нас товар поломается или заискрит,  а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br> 
-                 Дом уж восстановите как-нибудь сами.
-              </p>
-            </li>
-            <li class='features-item'>
-              <h3 class="heading-blue">Кредит</h3>
-              <p class="text">
-                  Залезть в долговую яму стало проще!<br> 
-                 Кредитные консультанты придут вам на помощь.
-              </p>
-            </li>
-            -->
-          </ul>
+        <div class="container">
+          <div class="features-title">
+      			<h2 class="heading">Сервисы</h2>
+      			<p class="text">Хороший интернет-магазин отличается от плохого не только ценами! <br>
+      			Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+          </div>
+          <div class="features-list-content">
+      			<ul class="features-button-list list">
+      				<li>
+      					<button class="features-button" type="button">Доставка</button>
+              </li>
+              <li>
+                <button class="features-button" type="button">Гарантия</button>
+              </li>
+              <li>
+                <button class="features-button" type="button">Кредит</button>
+              </li>	
+      			</ul>
+            <ul class="features-list list">
+              <li class='features-item'>
+                <h3 class="heading-blue">Доставка</h3>
+                <p class="text">
+                  Мы с удовольствием доставим ваш товар прямо<br>
+                  к вашему подъезду совершенно бесплатно!<br>
+                  Ведь мы неплохо заработаем, <br> 
+                  поднимая его на ваш этаж!
+                </p>
+              </li>
+              <!--<li class='features-item'>
+                <h3 class="heading-blue">Гарантия</h3>
+                <p class="text">
+                  Если купленный у нас товар поломается или заискрит,  а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br> 
+                   Дом уж восстановите как-нибудь сами.
+                </p>
+              </li>
+              <li class='features-item'>
+                <h3 class="heading-blue">Кредит</h3>
+                <p class="text">
+                    Залезть в долговую яму стало проще!<br> 
+                   Кредитные консультанты придут вам на помощь.
+                </p>
+              </li>
+              -->
+            </ul>
+          </div>
         </div>
   		</section>
-      <div class="about-wrapper">
+      <div class="about-wrapper container">
     		<section class="about">
     			<h2 class="heading">Компания «Техномарт»</h2>
     			<p class="text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
