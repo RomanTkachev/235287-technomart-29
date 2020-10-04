@@ -338,6 +338,13 @@ img {
 	margin-bottom: 8px;
 }
 
+.sorting-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 460px;
+}
+
 .catalog-list {
 	margin-bottom: 48px;
 	display: grid;
@@ -404,8 +411,11 @@ img {
 
 .bookmarks,
 .cart {
+	display: inline-block;
 	width: 150px;
-
+	min-height: 42px;
+	text-align: center;
+	padding-top: 9px;
 }
 
 .bookmarks:active,
@@ -446,6 +456,8 @@ img {
 	padding-top: 52px;
 }
 
+
+
 .header-phone {
 	color: var(--basic-red);
 	font-size: 21px;
@@ -461,6 +473,31 @@ img {
 }
 
 
+.header-account {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	width: 299px;
+	margin-left: 40px;
+}
+
+.username {
+	margin: 12px 36px 12px 57px;
+}
+
+.header-account button {
+  	border: none;
+	width: 20px;
+	height: 15px;
+}
+
+.user-navigation {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: inherit;
+	margin-top: 7px;
+}
 
 .login-link {
 	color: var(--basic-black);
@@ -489,9 +526,15 @@ img {
 
 .username {
 	color: var(--basic-black);
-	background-color: var(--basic-white);
+	
 	font-size: 21px;
 	line-height: 21px;
+}
+
+.username-area {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: var(--basic-white);
 }
 
 .username:active {
@@ -541,12 +584,19 @@ img {
   	padding: 0;
 }
 
+.breadcrumbs {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
 .breadcrumbs a {
 	color: var(--basic-black);
 	font-family: PT Sans, Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
 	text-transform: uppercase;
+	margin-right: 40px;
 }
 
 .categories-item-title {
@@ -655,24 +705,24 @@ img {
 
 .button-sorting {
 	padding: 0;
-  border: none;
-  background-color: transparent;
-  color: var(--basic-black-transparent);
-  font-family: "PT Sans", Arial, sans-serif;
+ 	border: none;
+  	background-color: transparent;
+  	color: var(--basic-black-transparent);
+  	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	line-height: 18px;
-  border-bottom: 1px dotted var(--basic-red);
-  text-transform: uppercase;
+  	border-bottom: 1px dotted var(--basic-red);
+  	text-transform: uppercase;
 }
 
 .button-sorting:hover {
-  color: var(--basic-black);
-  border-bottom: 1px solid var(--basic-red);
+  	color: var(--basic-black);
+  	border-bottom: 1px solid var(--basic-red);
 }
 
 .button-sorting:active {
-  color: var(--basic-red);
-  border-bottom: none;
+  	color: var(--basic-red);
+  	border-bottom: none;
 }
 
 .catalog-item {

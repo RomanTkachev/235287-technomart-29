@@ -11,7 +11,7 @@
   	<header class="main-header">
   		<div class="header-top-bar">
         <div class="header-top-bar-content">
-  	  		<p><a class="logo" href="index.html"><img src=img/icons/logo-technomart.svg width="108" height="18" alt="Логотип Техномарта"></a></p>
+  	  		<p class="logo"><a href="index.html"><img src=img/icons/logo-technomart.svg width="108" height="18" alt="Логотип Техномарта"></a></p>
   	  		<form action="#" method="GET">
   	  			<input class="search" type="search" placeholder="Поиск:">
   			  </form>
@@ -24,12 +24,20 @@
   		</div>
       <div class="header-middle-content">
         <i class="text-red">Интернет-магазин строительных материалов и инструментов для ремонта</i>
-        <p><a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a></p>
-        <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <a class="username" href="">Равшан Джамшутович</a>
-        <button type="button">Выйти</button>
-        <a class="account-link" href="">Мои заказы</a>
-        <a class="account-link" href="">Личный кабинет</a>
+        <div class="header-contacts"
+          <p><a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a></p>
+          <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </div>
+        <div class="header-account">
+          <div class="username-area">
+            <a class="username" href="">Равшан Джамшутович</a>
+            <button type="button"></button>
+          </div>
+          <div class="user-navigation">
+            <a class="account-link" href="">Мои заказы</a>
+            <a class="account-link" href="">Личный кабинет</a>
+          </div>
+        </div>
       </div>
       <nav class="main-navigation">
         <ul class="site-navigation-white list">
@@ -72,7 +80,7 @@
         </section>
         <section class="sorting heading-background-gray">
           <h2 class="sorting-heading">Сортировка:</h2>
-          <form action="#" method="GET">
+          <form class="sorting-form" action="#" method="GET">
             <button class="button-sorting">По цене</button>
             <button class="button-sorting">По типу</button>
             <button class="button-sorting">По функционалу</button>
