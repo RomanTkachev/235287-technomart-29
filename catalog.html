@@ -15,11 +15,9 @@
   	  		<form action="#" method="GET">
   	  			<input class="search" type="search" placeholder="Поиск:">
   			  </form>
-    			<p class="bookmarks">Закладки: <span>0</span></p>
-    			<p class="cart cart-full">Корзина: <span>10</span></p>
-    			<p>
-    				<a class="order-link" href="">Оформить заказ</a>
-    			</p>
+    			<a class="bookmarks" href="">Закладки: <span>0</span></a>
+          <a class="cart" href="">Корзина: <span>0</span></a>
+          <a class="order-link" href="">Оформить заказ</a>
         </div>
   		</div>
       <div class="header-middle-content">
@@ -230,7 +228,7 @@
     <footer class="page-footer main-footer">
       <div class="footer-top">
         <div class="footer-top-content">
-          <p><a class="logo" href=""><img src=img/icons/logo-technomart-big.svg width="138" height="23" alt="Логотип Техномарта"></a></p>
+          <p class="logo logo-big"><a href=""><img src=img/icons/logo-technomart-big.svg width="138" height="23" alt="Логотип Техномарта"></a></p>
           <ul class="site-navigation-gray list">
             <li>
               <a href="">Компания</a>
@@ -248,8 +246,10 @@
               <a href="">Контакты</a>
             </li>
           </ul>
-          <p class="footer-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 </p>
-          <a class="footer-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <div>
+            <p class="footer-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <a class="footer-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+            </div>
           <ul class="site-navigation-yellow list">
             <li>
               <a href="">Материалы</a>
@@ -268,16 +268,31 @@
       </div>
       <div class="footer-bottom">
         <div class="footer-bottom-content">
-          <p class="footer-copyright">© 2010–2019 Компания «Техномарт»  Все права защищены</p>
+          <p class="footer-copyright">© 2010–2019 Компания «Техномарт» Все права защищены</p>
           <ul class="social-list list">
             <li class="social-item">
-              <a href="#">Вконтакте</a>
+              <a  class="social-button" href="#">
+                <span class="visually-hidden">Вконтакте</span>
+                <svg width="27" height="16" viewBox="0 0 27 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.138 12.51C17.094 12.201 18.318 14.55 19.621 15.449C20.599 16.13 21.348 15.983 21.348 15.983L24.821 15.933C24.821 15.933 26.636 15.821 25.778 14.379C25.707 14.259 25.275 13.31 23.193 11.357C21.016 9.31398 21.311 9.64498 23.932 6.11298C25.529 3.95998 26.168 2.64498 25.968 2.08498C25.776 1.54598 24.603 1.68598 24.603 1.68598L20.69 1.71298C20.309 1.71398 19.986 1.83198 19.839 2.22798C19.836 2.23198 19.218 3.89398 18.394 5.30698C16.653 8.29598 15.958 8.45498 15.67 8.26798C15.009 7.83498 15.176 6.53098 15.176 5.60398C15.176 2.70698 15.608 1.49898 14.33 1.18698C13.903 1.08298 13.591 1.01498 12.502 1.00498C11.11 0.983976 9.928 1.00498 9.258 1.33398C8.813 1.55698 8.472 2.04598 8.679 2.07398C8.939 2.10898 9.522 2.23398 9.834 2.65998C10.235 3.21198 10.223 4.44898 10.223 4.44898C10.223 4.44898 10.452 7.85998 9.683 8.28298C9.155 8.57298 8.433 7.98098 6.88 5.26698C6.087 3.87898 5.488 2.34498 5.488 2.34498C5.488 2.34498 5.372 2.05998 5.162 1.90398C4.912 1.71898 4.562 1.65998 4.562 1.65998L0.848 1.68398C0.848 1.68398 0.29 1.69998 0.0850002 1.94598C-0.0969998 2.16398 0.0700002 2.61398 0.0700002 2.61398C0.0700002 2.61398 2.979 9.49498 6.273 12.961C9.293 16.143 12.725 15.932 12.725 15.932H14.28C14.28 15.932 14.749 15.878 14.989 15.62C15.213 15.38 15.203 14.929 15.203 14.929C15.203 14.929 15.172 12.82 16.138 12.51Z" fill="white"/>
+                </svg>
+              </a>
             </li>
             <li class="social-item">
-              <a href="#">Фейсбук</a>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
+                </svg>     
+              </a>
             </li>
             <li class="social-item">
-              <a href="#">Инстаграм</a>
+              <a class="social-button" href="#">
+                <span class="visually-hidden">Инстаграм</span>
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z" fill="white"/>
+                </svg>
+              </a>
             </li>
           </ul>
           <div class="feedback-content">

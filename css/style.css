@@ -498,6 +498,7 @@ img {
 	background-image: url('../img/icons/icon-bookmark.svg');
 	background-repeat: no-repeat;
 	background-position: 0 0;
+	opacity: 0.3;
 }
 
 .cart::before {
@@ -510,6 +511,7 @@ img {
 	background-image: url('../img/icons/icon-cart.svg');
 	background-repeat: no-repeat;
 	background-position: 0 0;
+	opacity: 0.3;
 }
 
 .bookmarks:active,
