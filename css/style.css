@@ -52,6 +52,7 @@
 	--special-another-border-blue: #405069;
 	--special-modal-gray: #F4F4F4;
 	--special-icon-blue: #3D546F;
+	--special-popup-gray: #F1F1F1;
 }
 
 
@@ -2100,7 +2101,7 @@ img {
 	text-transform: uppercase;
 }
 
-.modal-form button {
+.modal-form .button-close {
 	border: none;
 	padding: 0;
 	position: absolute;
@@ -2133,7 +2134,7 @@ img {
 	box-shadow: 0px 4px 20px var(--border-white)
 }
 
-.modal-map button {
+.modal-map .button-close {
 	border: none;
 	padding: 0;
 	position: absolute;
@@ -2145,4 +2146,89 @@ img {
 	background-image: url('../img/icons/icon-close.svg');
 	background-repeat: no-repeat;
 	background-position: 0 0;
+}
+
+/*Modal-cart*/
+
+.modal-cart {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	width: 620px;
+	height: 282px;
+	background-color: var(--basic-white);
+	border-top: 7px solid var(--basic-red);
+	box-sizing: border-box;
+	box-shadow: 0px 4px 20px var(--border-white)
+}
+
+.modal-cart .button-close {
+	border: none;
+	padding: 0;
+	position: absolute;
+	width: 21px;
+	height: 21px;
+	top: 12px;
+ 	right: 10px;
+	background-color: transparent;
+	background-image: url('../img/icons/icon-close.svg');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.modal-cart-text-area {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 164px;
+}
+
+.modal-text {
+	position: ;
+	margin: 0;
+	padding: 0;
+	color: var(--basic-black);
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.modal-text::before {
+	position: absolute;
+	content: '';
+	top: 48px;
+	left: 81px;
+	width: 66px;
+	height: 66px;
+	background-image: url('../img/icons/icon-mark.svg');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.modal-cart-button-area {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	min-height: 112px;
+	background-color: var(--special-popup-gray);
+}
+
+.modal-cart-button-area .button {
+	border: none;
+	padding: 0;
+	margin-right: 10px;
+	padding-top: 11px;
+	padding-bottom: 9px;
+}
+
+
+.modal-cart-button-area .button-white {
+	color: var(--basic-black);
+	background-color: var(--basic-white);
 }
