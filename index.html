@@ -29,14 +29,16 @@
           <a class="header-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
 			    <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
-			  <a class="login-link enter" href="">
-          <svg class="login-icon" width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M14.875 8.5L6 0V6H0V11H6V17L14.875 8.5Z" fill="#C5C5C5"/>
-            <path d="M16.986 15.01H11.959V17H16.986C19.164 17 19.99 15.19 20.015 13.974V3.028C19.99 1.811 19.164 0 16.986 0H11.959V1.99H16.986C17.825 1.99 17.978 2.671 17.996 3.047V13.951C17.979 14.327 17.825 15.01 16.986 15.01Z" fill="#C5C5C5"/>
-          </svg>
-          Войти
-        </a>
-			  <a class="login-link registration" href="">Регистрация</a>
+        <div class="header-account">
+  			  <a class="login-link enter" href="">
+            <svg class="login-icon" width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14.875 8.5L6 0V6H0V11H6V17L14.875 8.5Z" fill="#C5C5C5"/>
+              <path d="M16.986 15.01H11.959V17H16.986C19.164 17 19.99 15.19 20.015 13.974V3.028C19.99 1.811 19.164 0 16.986 0H11.959V1.99H16.986C17.825 1.99 17.978 2.671 17.996 3.047V13.951C17.979 14.327 17.825 15.01 16.986 15.01Z" fill="#C5C5C5"/>
+            </svg>
+            Войти
+          </a>
+  			 <a class="login-link registration" href="">Регистрация</a>
+        </div>
 		  </div>
   	  <nav class="main-navigation">
   			<ul class="site-navigation-white list">
@@ -125,7 +127,7 @@
   				<li class="catalog-item">
   					<a href="">
   						<img src="img/perforator-bfg-9000.png" width="184" height="164" alt="Перфоратор BOSCH BFG 9000">
-  						<h3 class="product-item-heading">Перфоратор BOSCH <br> BFG 9000</h3>
+  						<h3 class="product-item-heading">Перфоратор BOSCH BFG 9000</h3>
   						<p class="product-item-old-price">32500 Р.</p>
   						<p class="product-item-new-price">25500 Р.</p>
   					</a>
@@ -137,7 +139,7 @@
   				<li class="catalog-item new-item">
   					<a href="">
   						<img src="img/perforator-bfg-3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
-  						<h3 class="product-item-heading">Перфоратор BOSCH <br> BFG 3000</h3>
+  						<h3 class="product-item-heading">Перфоратор BOSCH BFG 3000</h3>
   						<p class="product-item-old-price">22500 Р.</p>
   						<p class="product-item-new-price">15500 Р.</p>
   					</a>
@@ -149,7 +151,7 @@
   				<li class="catalog-item">
   					<a href="">
   						<img src="img/perforator-bfg-6000.png" width="144" height="128" alt="Перфоратор BOSCH BFG 6000">
-  						<h3 class="product-item-heading">Перфоратор BOSCH <br> BFG 6000</h3>
+  						<h3 class="product-item-heading">Перфоратор BOSCH BFG 6000</h3>
   						<p class="product-item-old-price">30500 Р.</p>
   						<p class="product-item-new-price">25500 Р.</p>
   					</a>
@@ -161,7 +163,7 @@
   				<li class="catalog-item new-item">
   					<a href="">
   						<img src="img/perforator-bfg-3000.png" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
-  						<h3 class="product-item-heading">Перфоратор BOSCH <br> BFG 2000</h3>
+  						<h3 class="product-item-heading">Перфоратор BOSCH BFG 2000</h3>
               <p class="product-item-old-price price-hidden">12500 Р.</p>
   						<p class="product-item-new-price">12500 Р.</p>
   					</a>
@@ -277,7 +279,7 @@
       			Техномарт работает со многими транспортными компаниями:</p>
           </div>
     			<ul class="partners-list list">
-    				<li class="partners-item">Деловые Линии</li>
+    				<li class="partners-item">Деловые линии</li>
     				<li class="partners-item">Автотрейдинг</li>
     				<li class="partners-item">ЖелДорЭкспедиция</li>
     			</ul>
@@ -365,14 +367,40 @@
             <p class="feedback">Обратная связь:
         			<a class="link-yellow" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </p>
-          </div>
-          <div class="credits-content">
-      			<p class="credits">Разработано — <br>
+      			<p class="credits">Разработано —
         			<a class="link-yellow" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
       			</p>
           </div>
         </div>
   		</div>
   	</footer>
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <button type="button" area-label="Закрыть"></button>
+    </section>
+    <section class="modal modal-form">
+      <div class="modal-wrapper">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <form class="request-form" method="post" action="https://echo.htmlacademy.ru">
+          <p class="request-form-field field-name">
+            <label for="request-name">Ваше имя:</label>
+             <input class="input" type="text" name="name" id="request-name" placeholder="Имя Фамилия">
+          </p>
+          <p class="request-form-field field-email">
+            <label for="request-email">Ваш email:</label>
+            <input type="email" name="email" id="request-email" placeholder="email@example.com">
+          </p>
+          <p class="request-form-field field-textarea">
+            <label for="request-text">Текст письма:</label>
+              <textarea id="request-text">В свободной форме
+              </textarea>
+          </p>
+            <p class="request-form-field field-submit">
+            <input class="modal-submit-button" type="submit" name="submit-button" value="Отправить">
+          </p>
+        </form>
+        <button type="button" area-label="Закрыть"></button>
+      </div>
+    </section> 
   </body>
 </html>
