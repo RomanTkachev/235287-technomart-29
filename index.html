@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
     <link rel="stylesheet" href="css/normalize.css" >
-    <link rel="stylesheet" type="text/css" href="css/style-mini.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body class="page-body">
@@ -15,7 +15,7 @@
   	  		<form class="search-form" action="#" method="GET">
             <label class="visually-hidden" for="search">Поиск</label>
   	  			<input class="search" type="search" id="search" placeholder="Поиск:">         
-            <svg class="search-icon" width="17" height="17" aria-hidden="true" focusable="false" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="search-icon" width="17" height="17" aria-label="Поиск" aria-hidden="true" focusable="false" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"/>
             </svg>
   			  </form>
@@ -32,7 +32,7 @@
         </div>
         <div class="header-account">
   			  <a class="login-link enter" href="">
-            <svg class="login-icon" width="21" height="17" aria-hidden="true" focusable="false" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg class="login-icon" width="21" height="17" aria-label="Авторизация" aria-hidden="true" focusable="false" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M14.875 8.5L6 0V6H0V11H6V17L14.875 8.5Z" fill="#C5C5C5"/>
               <path d="M16.986 15.01H11.959V17H16.986C19.164 17 19.99 15.19 20.015 13.974V3.028C19.99 1.811 19.164 0 16.986 0H11.959V1.99H16.986C17.825 1.99 17.978 2.671 17.996 3.047V13.951C17.979 14.327 17.825 15.01 16.986 15.01Z" fill="#C5C5C5"/>
             </svg>
@@ -112,8 +112,8 @@
               <button class="slider-navigation-control right " type="button"></button>
               <button class="slider-navigation-control left" type="button"></button>
               <div class="slider-pagination">
-                <button class="slider-pagination-control" area-label="Первый слайд" type="button"></button>
-                <button class="slider-pagination-control current" area-label="Второй слайд" type="button"></button>
+                <button class="slider-pagination-control" aria-label="Первый слайд" type="button"></button>
+                <button class="slider-pagination-control current" aria-label="Второй слайд" type="button"></button>
               </div>
             </li>
       		</ul>       
@@ -379,7 +379,7 @@
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4114.320196854658!2d30.31935648963817!3d59.93883312261825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1603227032192!5m2!1sen!2sru" width="943" height="449" frameborder="0" title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      <button class="button-close map-close" type="button" area-label="Закрыть модальное окно"></button>
+      <button class="button-close map-close" type="button" aria-label="Закрыть модальное окно"></button>
     </section>
     <section class="modal modal-form modal-write-us">
       <div class="modal-wrapper">
@@ -401,19 +401,19 @@
             <input class="modal-submit-button" type="submit" name="submit-button" value="Отправить">
           </p>
         </form>
-        <button class="button-close write-us-close" type="button" area-label="Закрыть модальное окно"></button>
+        <button class="button-close write-us-close" type="button" aria-label="Закрыть модальное окно"></button>
       </div>
     </section>
     <section class="modal modal-cart">
       <div class="modal-wrapper">
         <div class="modal-cart-text-area">
-          <p class="modal-text">Товар добавлен в корзину!</p>
+          <h2 class="modal-text">Товар добавлен в корзину!</h2>
         </div>
         <div class="modal-cart-button-area">
           <button class="button modal-button" type="button">Оформить заказ</button>
           <button class="button modal-button button-white" aria-label="Закрыть модальное окно и продолжить покупки" type="button">Продолжить покупки</button>
         </div>
-        <button class="button-close cart-close" type="button" area-label="Закрыть модальное окно"></button>  
+        <button class="button-close cart-close" type="button" aria-label="Закрыть модальное окно"></button>  
       </div>
     </section> 
     <script src="js/scripts-mini.js"></script>
