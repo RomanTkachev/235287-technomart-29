@@ -5,9 +5,10 @@ let mapImage = document.querySelector('.map');
 let mapPopup = document.querySelector('.modal-map');
 let mapClose = document.querySelector('.map-close');
 
-mapImage.onclick = function () {
+mapImage.addEventListener('click', function (evt) {
+  evt.preventDefault();
 	mapPopup.classList.add('modal-show');
-}
+});
 
 mapClose.addEventListener('click', function() {
 	mapPopup.classList.remove('modal-show');
@@ -95,7 +96,8 @@ let i = 0;
 
 
 for (let button of buttonsBuy) {
-	button.onclick = function () {
+	button.addEventListener('click', function (evt) {
+    evt.preventDefault();
 		cartPopup.classList.add('modal-show');
 		if (i < 1) {
 		let goodsNumber = parseInt(cartCounter.innerText);
@@ -104,7 +106,7 @@ for (let button of buttonsBuy) {
 		cart.classList.add('cart-full');
 		i ++; 
 		}
-	}
+	});
 };
 
 cartClose.addEventListener('click', function() {
@@ -136,12 +138,13 @@ let markCounter = document.querySelector('.bookmark-counter');
 let bookmark = document.querySelector('.bookmarks')
 
 for (let buttonMark of buttonsMark) {
-	buttonMark.onclick = function () {
+	buttonMark.addEventListener('click', function (evt) {
+    evt.preventDefault();
 		let marksNumber = parseInt(markCounter.innerText);
 		marksNumber ++;
 		markCounter.innerText = marksNumber;
     bookmark.classList.add('cart-full');
-	}
+	});
 };
 
 //Sliders
@@ -150,57 +153,71 @@ for (let buttonMark of buttonsMark) {
 let slides = document.querySelectorAll('.slider-item') 
 let slidesButtonLeft = document.querySelector('.left');
 let slidesButtonRight = document.querySelector('.right');
-
+let sliderPoints = document.querySelectorAll('.slider-pagination-control')
 
 slidesButtonLeft.onclick = function() {
     slides[0].classList.toggle('slider-hidden');
     slides[1].classList.toggle('slider-hidden');
+    sliderPoints[0].classList.toggle('current');
+    sliderPoints[1].classList.toggle('current');
 };
 
 slidesButtonRight.onclick = function() {
     slides[0].classList.toggle('slider-hidden');
     slides[1].classList.toggle('slider-hidden');
+    sliderPoints[0].classList.toggle('current');
+    sliderPoints[1].classList.toggle('current');
 };
+
+
+for (let sliderPoint of sliderPoints) {
+  sliderPoint.onclick = function () {
+    slides[0].classList.toggle('slider-hidden');
+    slides[1].classList.toggle('slider-hidden');
+    sliderPoints[0].classList.toggle('current');
+    sliderPoints[1].classList.toggle('current');
+  };
+}
 
 // features-slider 
 
 let featureSliderbuttons = document.querySelectorAll('.features-button');
 let features = document.querySelectorAll('.features-item')
 
-featureSliderbuttons[0].addEventListener("click", function (evt) {
+featureSliderbuttons[0].addEventListener('click', function (evt) {
     evt.preventDefault();
 
-    featureSliderbuttons[2].classList.remove("feature-button-active");
-    featureSliderbuttons[1].classList.remove("feature-button-active");
-    featureSliderbuttons[0].classList.add("feature-button-active");
+    featureSliderbuttons[2].classList.remove('feature-button-active');
+    featureSliderbuttons[1].classList.remove('feature-button-active');
+    featureSliderbuttons[0].classList.add('feature-button-active');
 
-    features[1].classList.remove("feature-active");
-    features[2].classList.remove("feature-active");
-    features[0].classList.add("feature-active");
+    features[1].classList.remove('feature-active');
+    features[2].classList.remove('feature-active');
+    features[0].classList.add('feature-active');
 });
 
 
-featureSliderbuttons[1].addEventListener("click", function (evt) {
+featureSliderbuttons[1].addEventListener('click', function (evt) {
     evt.preventDefault();
 
-    featureSliderbuttons[0].classList.remove("feature-button-active");
-    featureSliderbuttons[2].classList.remove("feature-button-active");
-    featureSliderbuttons[1].classList.add("feature-button-active");
+    featureSliderbuttons[0].classList.remove('feature-button-active');
+    featureSliderbuttons[2].classList.remove('feature-button-active');
+    featureSliderbuttons[1].classList.add('feature-button-active');
 
-    features[0].classList.remove("feature-active");
-    features[2].classList.remove("feature-active");
-    features[1].classList.add("feature-active");
+    features[0].classList.remove('feature-active');
+    features[2].classList.remove('feature-active');
+    features[1].classList.add('feature-active');
 });
 
 
-featureSliderbuttons[2].addEventListener("click", function (evt) {
+featureSliderbuttons[2].addEventListener('click', function (evt) {
     evt.preventDefault();
 
-    featureSliderbuttons[0].classList.remove("feature-button-active");
-    featureSliderbuttons[1].classList.remove("feature-button-active");
-    featureSliderbuttons[2].classList.add("feature-button-active");
+    featureSliderbuttons[0].classList.remove('feature-button-active');
+    featureSliderbuttons[1].classList.remove('feature-button-active');
+    featureSliderbuttons[2].classList.add('feature-button-active');
 
-    features[1].classList.remove("feature-active");
-    features[0].classList.remove("feature-active");
-    features[2].classList.add("feature-active");
+    features[1].classList.remove('feature-active');
+    features[0].classList.remove('feature-active');
+    features[2].classList.add('feature-active');
 });

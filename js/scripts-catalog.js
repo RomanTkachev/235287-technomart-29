@@ -11,7 +11,8 @@ let i = 0;
 
 
 for (let button of buttonsBuy) {
-	button.onclick = function () {
+	button.addEventListener('click', function (evt) {
+    evt.preventDefault();
 		cartPopup.classList.add('modal-show');
 		if (i < 1) {
 		let goodsNumber = parseInt(cartCounter.innerText);
@@ -20,7 +21,7 @@ for (let button of buttonsBuy) {
 		cart.classList.add('cart-full');
 		i ++; 
 		}
-	}
+	});
 };
 
 cartClose.addEventListener('click', function() {
@@ -52,11 +53,12 @@ let markCounter = document.querySelector('.bookmark-counter');
 let bookmark = document.querySelector('.bookmarks')
 
 for (let buttonMark of buttonsMark) {
-	buttonMark.onclick = function () {
+	buttonMark.addEventListener('click', function (evt) {
+    evt.preventDefault();
 		let marksNumber = parseInt(markCounter.innerText);
 		marksNumber ++;
 		markCounter.innerText = marksNumber;
     bookmark.classList.add('cart-full');
-	}
+	});
 };
 

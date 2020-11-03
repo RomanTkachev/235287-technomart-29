@@ -258,7 +258,8 @@ img {
 	-ms-grid-columns: 1fr;
 	grid-template-columns: 1fr;
 	-ms-grid-rows: 1fr;
-	grid-template-rows: 1fr;
+	grid-template-rows: 266px;
+	background-color: var(--basic-deepblue);
 }
 
 .slider-item > *:nth-child(1) {
@@ -964,8 +965,11 @@ img {
 	-webkit-box-align: start;
 	    -ms-flex-align: start;
 	        align-items: flex-start;
-	width: 299px;
 	padding-top: 46px;
+}
+
+.header-account-logged {
+	width: 299px;
 }
 
 
@@ -1673,6 +1677,10 @@ img {
 	        user-select: none;
 }
 
+.filter-input:focus + label {
+    outline: 2px solid var(--basic-black);
+}
+
 .filter-input-checkbox + label::before {
 	content: '';
 	position: absolute;
@@ -2351,9 +2359,11 @@ img {
 	cursor: pointer;
 }
 
-.contacts button {
+.contacts a {
 	width: 300px;
 	padding: 0;
+	padding-top: 11px;
+    padding-bottom: 9px;
 	border: none;
 }
 
@@ -2886,3 +2896,5 @@ img {
             transform: translateX(10px);
   }
 }
+
+
